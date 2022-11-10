@@ -17,7 +17,7 @@ class instagram():
         self.data ={
             'comment_text': self.text,
             }
-    def Folow(self,id_ig):
+    def Follow(self,id_ig):
         response = requests.post(f'https://www.instagram.com/web/friendships/{id_ig}/follow/', headers=self.headers).text
         return response
     def Like(self,id_ig):
@@ -31,7 +31,7 @@ class instagram():
         return response
 
 job = instagram(cookies,id_ig,text)
-folow = job.Folow(id_ig)
+folow = job.Follow(id_ig)
 like = job.Like(id_ig)
 comment = job.Comment(id_ig)
 like_cmt = job.Like_comment(id_ig)
