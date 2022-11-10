@@ -31,7 +31,7 @@ class instagram():
         return response
 
 job = instagram(cookies,id_ig,text)
-folow = job.Follow(id_ig)
+follow = job.Follow(id_ig)
 like = job.Like(id_ig)
 comment = job.Comment(id_ig)
 like_cmt = job.Like_comment(id_ig)
